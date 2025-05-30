@@ -59,5 +59,6 @@ jobs:
 
     - name: Deploy to ROSA
       run: |
+        oc delete -f deployment.yaml
         oc apply -f deployment.yaml
         
