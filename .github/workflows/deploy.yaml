@@ -40,7 +40,7 @@ jobs:
       with:
         registry: ghcr.io
         username: ${{ github.actor }}
-        password: ${{ secrets.GHCR_PAT1 }}
+        password: ${{ secrets.GHCR_PAT }}
 
     - name: Build and push Docker image
       run: |
