@@ -76,7 +76,7 @@ jobs:
         git remote set-url origin git@github.com:${{ github.repository }}.git
         git add k8s/deployment.yaml
         git commit -m "Update image tag to ${{ github.sha }} [skip ci]"
-        git push origin main
+        git push
     
     - name: Install OpenShift CLI
       run: |
